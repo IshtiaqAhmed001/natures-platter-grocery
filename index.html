@@ -34,6 +34,14 @@
         .font-sora {
             font-family: "Sora", serif;
         }
+        @keyframes color-shift {
+    0% { filter: grayscale(100%); }
+    50% { filter: grayscale(0%); }
+    100% { filter: grayscale(100%); }
+}
+.custom-animation {
+    animation: color-shift 3s infinite ease-in-out;
+}
     </style>
 
 </head>
@@ -105,7 +113,7 @@
             </h1>
             <p class="w-11/12 md:w-1/2  text-sm md:text-xl sm:font-light ">Shop your daily essentials at unbeatable
                 prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
-            <img class="w-1/2" src="./assets/hero-vegetables.png" alt="">
+            <img class="w-1/2 custom-animation" src="./assets/hero-vegetables.png" alt="">
         </section>
     </header>
 
