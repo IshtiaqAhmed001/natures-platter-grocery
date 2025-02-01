@@ -40,10 +40,61 @@
 
 <body class="font-sora ">
     <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
-        <nav>
+        
+        
+        <!-- navbar  -->
+        <div class="navbar md:mb-32 mb-10  md:px-36 px-5 py-4 border-b-2 md:border-0">
+            <div class="navbar-start">
+              <a href="#" class="text-xl">
+                <img src="./assets/logo-header.png" alt="">
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Products</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="flex navbar-end md:hidden">
+                <i class="fa-solid fa-bars text-5xl"></i>
+            </div>
+            <!-- <div class="md:hidden visible">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Products</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Contact Us</a></li>
+                     
+                    </ul>
+                  </div>
+            </div> -->
+            <div class="hidden navbar-end md:flex gap-4">
+                <i class="fa-solid fa-cart-shopping text-
+                text-3xl text-gray-800"></i>
+                <i class="fa-solid fa-magnifying-glass text-3xl text-gray-800"></i>
+              <a class="btn btn-outline">Login</a>
+              <a class="btn bg-[#179800] text-white">Register</a>
+            </div>
+          </div>
 
-        </nav>
-
+        <!-- hero banner  -->
         <section class="hero-banner md:container mx-auto text-center flex flex-col items-center space-y-8">
             <h1 class="text-3xl md:text-6xl md:w-3/4 w-9/12 font-semibold">
                 Freshness
@@ -248,7 +299,7 @@
 </div>
      </section> -->
     </main>
-    <!-- footer  -->
+    
     <footer class="mt-32 md:px-36 px-5 py-12 bg-[#179800]">
         <!-- grocery news section  -->
      <section class="grocery-news-section  md:px-36 px-5  bg-[#EFEBE3] py-14 flex items-center gap-11 flex-col md:flex-row text-center md:text-start rounded-2xl relative -translate-y-1/2">
@@ -262,6 +313,8 @@
         <div class="btn bg-[#179800] text-white">Subscribe</div>
         </div>
              </section>
+
+             <!-- footer  -->
 <div class="footer-container text-white grid grid-cols-1 md:grid-cols-3 gap-12 md:items-end md:justify-items-end -mt-60 md:mt-0">
 <div>
     <img src="./assets/logo-footer.png" alt="">
@@ -269,9 +322,15 @@
 </div>
 <div>
     <ul>
-        <li>Product</li>
-        <li class="my-6">Services</li>
-        <li>Contact Us</li>
+        <li>
+            <a href="#">Product</a>
+        </li>
+        <li class="my-6">
+            <a href="#">Services</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
     </ul>
 </div>
 <div>
