@@ -13,7 +13,18 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
-
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'green-title':'#179800'
+          }
+        }
+      }
+    }
+  </script>
     <style>
         .font-sora {
   font-family: "Sora", serif;
@@ -39,5 +50,37 @@
                 <img class="w-1/2" src="./assets/hero-vegetables.png" alt="">
         </section>
     </header>
+
+    <main>
+        <!-- services section  -->
+         <section class="services-section my-32 md:px-36 px-5">
+            <h2 class="section-title text-green-title font-semibold text-4xl mb-12">
+                Services
+            </h2>
+            <div class="services-card-container grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="service-card pt-6 px-6 pb-11 bg-[#EFEBE3] text-center rounded-2xl">
+                    <div class="mx-auto w-32 h-32 p-4  bg-white rounded-full ">
+                        <img  src="./assets/service.png" alt="">
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-3 mt-6">24/7 Services </h3>
+                    <p class="font-light text-xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="service-card bg-[#EFEBE3] text-center pt-8 px-8 pb-11 rounded-2xl">
+                    <div class="mx-auto w-32 h-32 p-4  bg-white rounded-full ">
+                        <img  src="./assets/delivery.png" alt="">
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-3 mt-6">Fast Delivery</h3>
+                    <p class="font-light text-xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="service-card bg-[#EFEBE3] text-center pt-8 px-8 pb-11 rounded-2xl">
+                    <div class="mx-auto w-32 h-32 p-4  bg-white rounded-full ">
+                        <img  src="./assets/healthy.png" alt="">
+                    </div>
+                    <h3 class="font-semibold text-2xl mb-3 mt-6">Healthy Products </h3>
+                    <p class="font-light text-xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+            </div>
+         </section>
+    </main>
 </body>
 </html>
